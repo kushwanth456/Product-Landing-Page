@@ -1,0 +1,431 @@
+*{
+    font-family: myfont;
+}
+@font-face{
+    font-family: 'myfont';
+    src: url(/font/AsapCondensed-Medium.ttf);
+}
+/* this css is for navigation */
+
+#nav{
+    width: 100%;
+    display: flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    font-size: 19px;
+}
+#logo{
+    height: 55px;
+    color: rgb(211, 21, 21);
+    margin-left: 60px;
+}
+#gap{
+    margin-left: 500px;
+}
+button{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(0, 213, 255);
+    border: none;
+    border-radius: 8px;
+    font-size: 19px;
+}
+button:hover{
+    background-color: rgb(241, 32, 0);
+    color: white;
+}
+.highlight,.highlight:active,.highlight:focus{
+    text-decoration-line:none ;
+    color: black;
+}
+.highlight:hover{
+    color: rgb(0, 0, 255);
+}
+.highlight:focus{
+    border-bottom: 4px solid blue;
+}
+/* this is for hero section */
+
+#herobg{
+    height: 400px;
+    margin-top: -10px;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imghero{
+    position: absolute;
+    height: 180px;
+    margin-left: 600px;
+    z-index: 2;
+    animation: zoom 1s linear 1;
+}
+@keyframes zoom {
+    0%{
+        opacity: 0%;
+        height: 1px;
+    }
+}
+#side{
+    height: 250px;
+    width: 350px;
+    justify-content: center;
+    margin-right: 600px;
+    align-items: center;
+}
+#heropara{
+    color: darkgray;
+    font-size: 21px;
+}
+.heroheading{
+    display: inline;
+    font-size: 40px;
+    color: white;
+    bottom: -10px;
+}
+.heroheading1{
+    display: inline;
+    font-size: 40px;
+    color: #ff8800;
+}
+#herobutton{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(255, 38, 38);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+#herobutton:hover{
+    transform: scale(1.05);
+}
+#mainbutton:hover{
+    background-color:rgb(241, 32, 0);
+}
+#shadow{
+    position: absolute;
+    height: 10px;
+    width: 300px;
+    border-radius:100% ;
+    background-color: rgba(0, 0, 0, 0.684);
+    margin-left: 600px;
+    margin-top: 150px;
+    z-index: 1;
+    box-shadow: 0px 0px 80px  40px;
+    animation: zoom 1.2s linear 1;
+}
+#text{
+    margin-top: -280px;
+    text-align: end;
+    margin-right: -300px;
+}
+#color{
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+#heroname{
+    color: rgb(255, 1, 1);
+    font-size: 40px;
+}
+#heroprice{
+    color: white;
+    line-height: 8px;
+    font-size: 30px;
+}
+/* feautures section */
+#section2bg{
+    height: 400px;
+    width: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.fhead{
+    position:absolute;
+    bottom: 100px;
+    margin-left: -100px;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+#f1container{
+    display: flex;
+    flex-direction: column;
+    align-items: end; 
+    justify-content: center;
+    margin-right: 60px;
+}
+#f2container{
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+    justify-content: center;
+    margin-left: 60px;
+}
+.features{
+    color: navy;
+    line-height: 0px;
+}
+#imgf{
+    height: 170px;
+    width: 400px;
+}
+/* section 3 */
+#section3bg{
+    height: 400px;
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.fa-solid,.fa-brands,.fa-regular{
+    padding: 10px;
+}
+video{
+    height: 100%;
+    width:100%;
+    opacity: 50%;
+    object-fit: cover;
+}
+/* section four */
+#section4bg{
+    height: 400px;
+    width: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productbg{
+    height: 250px;
+    width: 250px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color:whitesmoke;
+    margin: 0px 20px;
+    display: flex;
+    overflow: hidden;
+    padding: 15px;
+    transition: 200ms linear;
+    box-shadow: 0px 0px 6px 0.5px rgba(0, 0, 0, 0.355);
+    line-height: 20px;
+    border-radius: 20px;
+}
+#productimg1{
+    padding-right: 30px;
+    padding-left: 15px;
+}
+.productbg:hover{
+    width: 450px;
+    max-height: 300px;
+    transform: scale(1.1);
+
+}
+.productimg{
+    height: 90px;
+    /* border: 2px solid; */
+    object-fit: cover;
+    justify-content: center;
+}
+ul{
+    height: 200px;
+    width: 170px;
+}
+li{
+    margin-bottom: 10px
+}
+/* <!-- *************** SECTION 6 ( TESTIMONIALS SECTION ) *************** --> */
+#section6bg{
+    height: 400px;
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.idbg{
+    height: 200px;
+    width: 170px;
+    background-color: whitesmoke;
+    margin: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 100ms linear;
+    box-shadow: 0px 0px 14px 1px white;
+}
+.idbg:hover{
+    transform: scale(1.1);
+}
+.idimg{
+    height: 70px;
+    border-radius: 10px;
+}
+.idname{
+    font-size: 20px;
+    margin: -5px;
+    padding-top: 15px;
+}
+.idp{
+    text-align: justify;
+    color: rgb(102, 102, 102);
+}
+#testi{
+    font-size: 45px;
+    position: absolute;
+    margin-top: -300px;
+    color:rgb(255, 38, 38);
+    text-transform: uppercase;
+}
+
+
+#section7bg{
+    height: 400px;
+    width: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.faqbg{
+    height: 50px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 08px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    transition: 250ms linear;
+    margin: 20px;
+}
+.faqbg:hover{
+    padding-bottom: 70px;
+}
+.faq{
+    margin-top: 50px;
+}
+#faqhead{
+    position: absolute;
+    margin-top: -310px;
+    font-size: 45px;
+}
+
+/* <!-- *************** SECTION 7 ( BuyNow SECTION ) *************** --> */
+
+#section8bg{
+    height: 400px;
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+/* #section9bg{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+} */
+/* Footer Section */
+#footerbg {
+    background-color: navy;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 14px;
+    color: lightgray;
+    line-height: 1.5;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: lightgray;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: lightgray;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: lightgray;
+}
+.links{
+    margin-left: 90px;
+}
